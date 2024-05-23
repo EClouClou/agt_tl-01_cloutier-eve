@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="ca-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/JS/app.js" defer></script>
+    <script src="./assets/JS/details.js" defer></script>
+    <link rel="stylesheet" href="./assets/CSS/theme/default.css">
+    <link rel="stylesheet" href="./assets/CSS/theme/fonts.css">
+    <link rel="stylesheet" href="./assets/CSS/components/body.css">
+    <link rel="stylesheet" href="./assets/CSS/components/header.css">
+    <link rel="stylesheet" href="./assets/CSS/components/main.css">
+    <link rel="stylesheet" href="./assets/CSS/components/footer.css">
+
+    <title>CSS3</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <div>
+                <h3>L'ultime couche pour un design Web incroyable!</h3>
+                <h2>COMPOSANTES</h2>
+                <h1>CSS3 <span class="AZ">de A à Z</span></h1>
+            </div>
+        </div>
+        <div class="red"></div>
+        <nav class="nav-principale">
+            <ul class="alphabet">
+                <li class="lettre"><a href="#A"><h4>A</h4></a></li>
+                <li class="lettre"><a href="#B"><h4>B</h4></a></li>
+                <li class="lettre"><a href="#C"><h4>C</h4></a></li>
+                <li class="lettre"><a href="#D"><h4>D</h4></a></li>
+                <li class="lettre"><a href="#E"><h4>E</h4></a></li>
+                <li class="lettre"><a href="#F"><h4>F</h4></a></li>
+                <li class="lettre"><a href="#G"><h4>G</h4></a></li>
+                <li class="lettre"><a href="#H"><h4>H</h4></a></li>
+                <li class="lettre"><a href="#I"><h4>I</h4></a></li>
+                <li class="lettre"><a href="#J"><h4>J</h4></a></li>
+                <li class="lettre"><a href="#K"><h4>K</h4></a></li>
+                <li class="lettre"><a href="#L"><h4>L</h4></a></li>
+                <li class="lettre"><a href="#M"><h4>M</h4></a></li>
+                <li class="lettre"><a href="#N"><h4>N</h4></a></li>
+                <li class="lettre"><a href="#O"><h4>O</h4></a></li>
+                <li class="lettre"><a href="#P"><h4>P</h4></a></li>
+                <li class="lettre"><a href="#Q"><h4>Q</h4></a></li>
+                <li class="lettre"><a href="#R"><h4>R</h4></a></li>
+                <li class="lettre"><a href="#S"><h4>S</h4></a></li>
+                <li class="lettre"><a href="#T"><h4>T</h4></a></li>
+                <li class="lettre"><a href="#U"><h4>U</h4></a></li>
+                <li class="lettre"><a href="#V"><h4>V</h4></a></li>
+                <li class="lettre"><a href="#W"><h4>W</h4></a></li>
+                <li class="lettre"><a href="#X"><h4>X</h4></a></li>
+                <li class="lettre"><a href="#Y"><h4>Y</h4></a></li>
+                <li class="lettre"><a href="#Z"><h4>Z</h4></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="sujets">
+        <details id="A" class="sujet">
+        <summary class="details_summary">A</summary>
+            <div class="details_dropdown">
+                <h2>AJUSTEMENT DE L'OBJET (OBJECT-FIT)</h2>
+                <H3>Rôle</H3>
+                <p>La propriété <span class="gras">object-fit</span> régit la manière dont une image, un vidéo ou un autre média s'intégrera dans un conteneur parent.</p>
+                <h3>Avantage</h3>
+                <p>Elle permet de sauver du temps en évitant de passer par des logiciels de correction photo pour recadrer, comme Adobe Photoshop, et d'appliquer directement un encadrement souhaité en utilisant les propriétés suivantes :</p>
+                <ul>
+                    <li>fill;</li>
+                    <li>contain;</li>
+                    <li>cover;</li>
+                    <li>none;</li>
+                    <li>scale-down.</li>
+                </ul>
+                <h3>Exemples</h3>
+                <div class="object-fit">
+                    <div class="contain">
+                        <h5>Contain</h5>
+                        <h5>Code</h5>
+                    <pre><code>.objet-conteneur {
+    width: 15rem;
+    height: 15rem;
+    border: 5px solid var(--orange-color);
+    object-fit: contain;
+}</code></pre>
+                            <h5>Résultat</h5>
+                            <img class="objet-conteneur" src="./assets/IMG/hamster.jpg" alt="Hamster blanc-roux très mignon.">
+                    </div>
+                    <div class="cover">
+                            <h5>Cover</h5>
+                            <h5>Code</h5>
+                <pre><code>.objet-conteneur2 {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    border: 5px solid var(--orange-color);
+    object-fit: cover;
+}</code></pre>
+                            <h5>Résultat</h5>
+                            <img class="objet-conteneur2" src="./assets/IMG/hamster.jpg" alt="Hamster blanc-roux très mignon.">
+                    </div>
+                </div>
+                <h2>ANIMATION</h2>
+                <h3>Rôle</h3>
+                <p>La propriété d'animation anime progressivement un élément entre plusieurs styles CSS applicables, sans recourir à l'utilisation de JavaScript, à partir de la règle @keyframes. </p>
+                <h3>Avantage</h3>
+                <p>Il s'agit d'un raccourci qui permet de sauver du temps en regroupant toutes ces propriétés :</p>
+                <ul>
+                    <li>animation-delay;</li>
+                    <li>animation-direction;</li>
+                    <li>animation-duration;</li>
+                    <li>animation-fill-mode;</li>
+                    <li>animation-iteration-count;</li>
+                    <li>animation-name;</li>
+                    <li>animation-play-state;</li>
+                    <li>animation-timeline;</li>
+                    <li>animation-timing-function.</li>
+                </ul>
+                <h3>Exemple</h3>
+                <p>Ici, la recharge de notre batterie pulsera à toutes les 1,5 secondes en alternant la direction de l'animation infiniment :</p>
+                <h5>Code</h5>
+                <pre><code>.animation {
+        display: flex;
+        justify-content: row;
+        justify-content: space-between;
+        width: 0.8rem;
+        height: 1.5rem;
+        border-radius: 0.2rem;
+        background-color: var(--white-color);
+        border: 2px solid var(--yellow-color);
+        animation: batterie 1.5s alternate infinite;
+    }
+
+    @keyframes batterie {
+        0% {background-color: var(--white-color);}
+        100% {background-color: 
+            svar(--terracotta-color);}
+    }           </code></pre>
+                <h5>Résultat</h5>
+                <div class="batterie">
+                    <div class="container-animation">
+                        <div class="animation"></div>
+                        <div class="animation"></div>
+                        <div class="animation"></div>
+                    </div>
+                    <div class="bout"></div>
+                </div>
+            </div>
+            </details>
+            <details id="B" class="sujet">
+                <summary class="details_summary">B</summary>
+                <div class="details_dropdown">
+                    <h2>BACKGROUND-CLIP</h2>
+                    <h3>Rôle</h3>
+                    <p>La propriété <span class="gras">background-clip</span> permet de spécifier à quel élément s'accroche l'arrière-plan.</p>
+                    <h3>Avantage</h3>
+                    <p>Il agrémente la mise en page des conteneurs à l'aide des valeurs suivantes :</p>
+                    <ul>
+                        <li>border-box : l'arrière-plan rempli le conteneur et s'accroche jusqu'à l'extérieur de la bordure de l'élément;</li>
+                        <li>padding-box: l'arrière-plan rempli le conteneur et s'accroche au bord extérieur du padding, sans passer sur la bordure;</li>
+                        <li>content-box : l'arrière-plan s'accroche aux bordures du conteneur, sans passer sur la bordure;</li>
+                        <li>text : l'arrière-plan s'accroche au texte seulement.</li>
+                    </ul>
+                    <h3>Exemples</h3>
+                    <h5>Code</h5>
+                    <pre><code>.border-item {
+    padding: 3rem;
+    color: var(--white-color);
+    background-color: var(--brown-color);
+    border: 3px solid var(--yellow-color);
+    background-clip: border-box;
+}
+
+.content-item {
+    justify-content: center;
+    color: var(--white-color);
+    padding: 3rem;
+    background-color: var(--brown-color);
+    border: 3px solid var(--yellow-color);
+    background-clip: content-box;
+}/code></pre>
+                    <h5>Résultat</h5>
+                    <div class="clip">
+                        <p class="border-item">Voici un exemple de border-box</p>
+                        <p class="content-item">Voici un exemple de content-box</p>
+                    </div>
+                    <h2>BORDURE ARRONDIE (BORDER-RADIUS)</h2>
+                    <h3>Rôle</h3>
+                    <p>La propriété raccourcie <span class="gras">border-radius</span> définie l'arrondi d'un ou de plusieurs coins d'un élément à même l'arrière-plan, même si cet élément n'en contient pas à la base.</p>
+                    <h3>Avantages</h3>
+                    <p>Cet outil permet d'économiser du temps en regroupant plusieurs propriétés, en évitant de passer par des logiciels de correction photo, comme Adobe Photoshop, et d'appliquer directement un arrondi pour obtenir le changement souhaité en utilisant le pourcentage ou la longueur en tant que mesure.</p>
+                    <h3>Exemple</h3>
+                    <p>Voici un rectangle possédant de multiples coins arrondis à divers degrés.</p>
+                    <h5>Code</h5>
+                    <pre><code>
+.radius-container {
+    width: 18rem;
+    height: 15rem;
+    background-color: var(--terracotta-color);
+    border-radius: 50% 38% 45% 20%;
+}</code></pre>
+                    <h5>Résultat</h5>                    
+                    <div class="radius-container"></div>
+                    <h2>BOX-SHADOW</h2> 
+                    <h3>Rôle</h3>
+                    <p>La propriété <span class="gras">box-shadow</span> crée une ou plusieurs ombres sur une boîte.</p>
+                    <h3>Avantages</h3>
+                    <p>Elle s'adapte également aux bordures arrondies. Cette propriété peut inclure les valeurs suivantes :</p>
+                    <ul>
+                        <li>length;</li>
+                        <li>offset-x;</li>
+                        <li>offset-y;</li>
+                        <li>blur-radius;</li>
+                        <li>spread-radius;</li>
+                        <li>inset;</li>
+                        <li>color.</li>
+                    </ul>
+                    <h3>Exemple</h3>
+                    <h5>Code</h5>
+                    <pre><code>.shadow-exemple1 {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius:1rem;
+    text-align: center;
+    box-shadow: rgba(89, 18, 2, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(140, 28, 3, 0.35) 0px -2px 6px 0px inset;
+}
+
+.shadow-exemple1 h2 {
+    padding: 0;
+}</code></pre>
+                    <h5>Résultat</h5>
+                    <div class="shadow-exemple1">
+                        <div><h2>Ombre</h2></div>
+                    </div>
+                    <h3>Exemple</h3>
+                    <h5>Code</h5>
+<pre><code>.shadow-exemple2 {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius:1rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}</code></pre>
+                    <h5>Résultat</h5>
+                    <div class="shadow-exemple2">
+                        <div><h2>Ombre</h2></div>
+                    </div>
+                </div>
+            </details>
+            <details id="C" class="sujet">
+                <summary class="details_summary">C</summary>
+                <div class="details_dropdown"> 
+                    <h2>Multicolonnes (Columns)</h2> 
+                    <h3>Rôle</h3>
+                    <p>La propriété enrichie <span class="gras">columns</span> permet de définir la largeur souhaitée des colonnes ainsi que leur nombre.</p>
+                    <h3>Avantages</h3>
+                    <p>C'est un raccourci qui permet d'économiser du temps et de regrouper au même endroit ces informations. Les options suivantes sont à définir :</p>
+                    <ul>
+                        <li>column-width;</li>
+                        <li>column-count.</li>
+                    </ul>
+                    <h3>Exemple</h3>
+                    <p>Voici un texte sur deux colonnes avec une bordure centrale :</p>
+                    <h5>Code</h5>
+                    <pre><code>.colonne > p {
+    padding: 0 1rem ;
+    columns: 2 3rem ;
+    column-rule: solid 2px var(--brown-color);
+    column-fill: balance;
+}
+
+.colonne p:first-of-type {
+    margin-top: 0;
+}
+
+.colonne p:last-of-type {
+    margin-bottom: 0;
+}
+
+.colonne h4 {
+    column-span: all;
+    padding: 0 0 1rem 1rem;
+}</code></pre>
+                    <h5>Résultat</h5>
+                    <div class="colonne">
+                        <h3>Extrait du livre : Geisha</h3>
+                        <p>" Je me retrouvais au bord des falaises, à fixer les ténèbres. J'entendais les vagues en contrebas. Ce ressac violent me parut comme une lamentation amère. Je voyais de la cruauté en tout - comme si les arbres, le vent, les rochers sur lesquels je me tenais s'alliaient avec ma vieille ennemie, Hatsumomo. Le hululement du vent, les feuilles qui bruissaient, semblaient se moquer de moi. Mon destin avait-il pris un tour irrémédiable ? Je sortis le mouchoir du président de ma manche. Je tendis le bras au-dessus du vide. J'allais lâcher le mouchoir dans les ténèbres, quand je pensais aux tablettes mortuaires que m'avait envoyées M.Tanaka, il y avait des années de ça. Il faut toujours garder un souvenir de nos chers disparus. Les tablettes mortuaires , à l'okiya, étaient tout ce qui me restait de mon enfance. Le mouchoir du président serait tout ce qui resterait de ma vie de femme. "</p>
+                        </div>
+                    </div>
+            </details>
+            <details id="D" class="sujet">
+                <summary class="details_summary">D</summary>
+                <div class="details_dropdown">
+                    <h2>DÉBORDEMENT (OVERFLOW)</h2> 
+                    <h3>Rôle</h3>
+                    <p>La propriété <span class="gras">oveflow</span> gère l'excédent du texte ou de l'image qui déborde d'un conteneur.</p>
+                    <h3>Avantages</h3>
+                    <p>Améliore le contrôle du contenu de la mise en page à l'aide des valeurs suivantes :</p>
+                    <ul>
+                        <li>visible;</li>
+                        <li>hidden;</li>
+                        <li>scroll;</li>
+                        <li>clip;</li>
+                        <li>auto;</li>
+                        <li>initial;</li>
+                        <li>inherit.</li>
+                    </ul>
+                    <h3>Exemple</h3>
+                    <p>Il s'agit d'un texte qui sera accessible avec une barre de défilement à droite.</p>
+                    <h5>Code</h5>
+<pre><code>.overflow-container {
+    width: 15rem;
+    height: 10rem;
+    border: 5px solid var(--terracotta-color);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
+}</code></pre>
+                    <h5>Résultat</h5>
+                    <div class="overflow-container">
+                        <p>Aujourd'hui je sais que notre univers n'est pas plus réel qu'une vague qui se dresse à la surface de l'océan. Quels que soient nos luttes, nos triomphes, quelle que soit la façon dont ils nous affectent, ils ne tardent pas à se fondre en un lavis, à s'estomper, comme de l'encre diluée sur du papier.</p>
+                    </div>
+                    <h2>DÉCORATION TEXTUELLE (TEXT DECORATION)</h2>
+                    <h3>Rôle</h3>
+                    <p>La propriété <span class="gras">text decoration</span> permet de gérer les effets d'emphase et de mise en forme du texte, comme le soulignement, l'alignement, les ombres, etc.</p>
+                    <h3>Avantage</h3>
+                    <p>Il améliore grandement la mise en page à partir des valeurs suivantes:</p>
+                        <ul>
+                            <li>text-decoration-color;</li>
+                            <li>text-decoration-line;</li>
+                            <li>text-decoration-style.</li>
+                        </ul>
+                    <h3>Exemple</h3>
+                    <p>Voici un texte qui sera souligné en vague de couleur jaune.</p>
+                    <h5>Code</h5>
+                    <pre><code>.decoration-exemple {
+    padding: 1rem;
+    text-decoration: underline wavy var(--yellow-color);
+}</code></pre>
+                    <h5>Résultat</h5>
+                    <p class="decoration-exemple">Décoration textuelle</p>
+
+                    <h2>DÉGRADÉ DE COULEUR (GRADIENT)</h2> 
+                    <h3>Rôle</h3>
+                    <p>Cette propriété réalise une transition dynamique, soit un mélange progressif, entre deux ou plusieurs couleurs opaques ou non.</p>
+                    <h3>Avantages</h3>
+                    <p>L'usage des <span class="gras">dégradés</span> (gradient) évite d'utiliser des images matricielles pour obtenir cet effet. Il réduit ainsi la charge sur la bande passante et le temps de téléchargement. Voici les types de dégradés possibles :</p>
+                    <ul>
+                        <li>linear-gradient;</li>
+                        <li>radial-gradient;</li>
+                        <li>conic-gradient.</li>
+                    </ul>
+                    <h3>Exemple</h3>
+                    <h5>Code</h5>
+
+<pre><code>.gradient-container {
+    width: 50vw;
+    height: 10rem;
+    border-radius: 1rem;
+    background: linear-gradient(to left, var(--brown-color), var(--terracotta-color), var(--yellow-color-p), var(--yellow-color));
+}</code></pre>
+                    <h5>Résultat</h5>
+                    <div class="gradient">
+                        <div class="gradient-container">
+                        </div>
+                    </div>
+                </div>
+            </details>
+            <details id="E" class="sujet">
+                <summary class="details_summary">E</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2> 
+                </div>
+            </details>
+            <details id="F" class="sujet">
+                <summary class="details_summary">F</summary>
+                <div class="details_dropdown">
+                    <h2>FILTRE (FILTER)</h2> 
+                    <h3>Rôle</h3>
+                    <p>La propriété <span class="gras">filter</span> vise à ajuster la couleur, l'exposition, le contraste, etc., des images, des arrières-plans ou des éléments comme des bordures.</p>
+                    <h3>Avantages</h3>
+                    <p>Cet outil permet de sauver du temps en évitant de passer par des logiciels de correction photo, comme Adobe Photoshop, et d'appliquer directement un filtre pour obtenir le changement souhaité. Il suffit de choisir parmi les fonctions suivantes :</p>
+                    <ul>
+                        <li>blur;</li>
+                        <li>brightness;</li>
+                        <li>contrast;</li>
+                        <li>drop-shadow;</li>
+                        <li>grayscale;</li>
+                        <li>hue-rotate;</li>
+                        <li>invert;</li>
+                        <li>opacity;</li>
+                        <li>saturate;</li>
+                        <li>sepia.</li>
+                    </ul>
+                    <h3>Exemple</h3>
+                    <h5>Photo d'origine</h5>
+                    <img class="filter-photo" src="./assets/IMG/maison.jpg" alt="Maison de campagne normande">
+                    <h5>Filtre blur sur la photo</h5>
+                    <h5>Code</h5>
+                    <pre><code>.filter-blur {
+    width: 90vw;
+    border: 3px solid var(--yellow-color-p);
+    border-radius: 5rem;
+    filter: blur(0.5px);
+}</code></pre>
+                    <h5>Résultat</h5>
+                    <img class="filter-blur" src="./assets/IMG/maison.jpg" alt="Maison de campagne normande">
+                    <h5>Filtre sepia sur la photo</h5>
+                    <h5>Code</h5>
+                    <pre><code>.filter-sepia {
+    width: 90vw;
+    border: 3px solid var(--yellow-color-p);
+    border-radius: 10rem;
+    filter: sepia(70%);
+}</code></pre>
+                    <h5>Résultat</h5>
+                    <img class="filter-sepia" src="./assets/IMG/maison.jpg" alt="Maison de campagne normande">
+                    <h5>Filtre hue-rotate sur la photo</h5>
+                    <h5>Code</h5>
+                    <pre><code>.filter-hue {
+        width: 90vw;
+        border: 3px solid var(--yellow-color-p);
+        border-radius: 10rem;
+        filter: hue-rotate(30deg);
+    }</code></pre>
+                    <h5>Résultat</h5>
+                    <img class="filter-hue" src="./assets/IMG/maison.jpg" alt="Maison de campagne normande">
+                    <h5>Filtre grayscale sur la photo</h5>
+                    <h5>Code</h5>
+<pre><code>.filter-grayscale {
+    width: 90vw;
+    border: 3px solid var(--yellow-color-p);
+    border-radius: 10rem;
+    filter: grayscale(70%);
+}</code></pre>
+                    <h5>Résultat</h5>
+                    <img class="filter-grayscale" src="./assets/IMG/maison.jpg" alt="Maison de campagne normande">
+                    <h2>FLEXBOX </h2> 
+                    <h3>Rôle</h3>
+                    <p>Cette méthode adaptative permet de distribuer rapidement et efficacement des éléments en colonne et en ligne à partir d'un axe principal.</p>
+                    <h3>Avantages</h3>
+                    <p>Le contenu du flexbox s'adapte à la taille de l'écran, permettant rendre la taille des éléments flexibles et de les faire suivre sur la ligne suivante, au besoins.</p>
+                    <p>Voici les propriétés du conteneur parent :</p>
+                    <ul>
+                        <li>display;</li>
+                        <li>flex-direction;</li>
+                        <li>flex-wrap;</li>
+                        <li>flex-flow;</li>
+                        <li>justify-content;</li>
+                        <li>align-items;</li>
+                        <li>align-content;</li>
+                        <li>gap;</li>
+                        <li>row-gap;</li>
+                        <li>column-gap.</li>
+                    </ul>
+                    <p>Voici les propriétés du conteneur enfant :</p>
+                    <ul>
+                        <li>order;</li>
+                        <li>flex-grow;</li>
+                        <li>flex-shrink;</li>
+                        <li>flex-basis;</li>
+                        <li>flex;</li>
+                        <li>align-self.</li>
+                    </ul>
+                    <h3>Exemples</h3>
+                    <p>Voici un exemple simple de cette méthode avec un alignement en colonne :</p>
+                    <h5>Code</h5>
+                    <pre><code>.flex-container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    background-color: var(--yellow-color);
+    border: 2px solid var(--terracotta-color);
+}
+
+.flex-item > p {
+    padding : 1rem 0;
+    font-weight: 700;
+    gap: 1rem;
+}</code></pre>
+                    <h5>Résultat</h5>
+                    <div class="flex-container1">
+                        <div class="flex-item"><p>1</p></div>
+                        <div class="flex-item"><p>2</p></div>
+                        <div class="flex-item"><p>3</p></div>
+                        <div class="flex-item"><p>4</p></div>
+                    </div>
+                    <p>Voici un exemple de cette méthode avec un alignement sur la ligne centré :</p>
+                    <h5>Code</h5>
+                    <pre><code>.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}</code></pre>
+                    <div class="flex-container2">
+                        <div class="flex-item"><p>1</p></div>
+                        <div class="flex-item"><p>2</p></div>
+                        <div class="flex-item"><p>3</p></div>
+                        <div class="flex-item"><p>4</p></div>
+                    </div>
+                    <p>Voici un exemple de cette méthode avec un alignement en space-between sur la ligne :</p>
+                    <h5>Code</h5>
+                    <pre><code>.flex-container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}</code></pre>
+                    <div class="flex-container3">
+                        <div class="flex-item"><p>1</p></div>
+                        <div class="flex-item"><p>2</p></div>
+                        <div class="flex-item"><p>3</p></div>
+                        <div class="flex-item"><p>4</p></div>
+                    </div>
+                </div>
+            </details>
+            <details id="G" class="sujet">
+                <summary class="details_summary">G</summary>
+                <div class="details_dropdown">
+                    <h2>GRILLE CSS (GRID)</h2> 
+                    <h3>Rôle</h3>
+                    <p>La <span class="gras">grille</span> a révolutionné la mise en page en créant un conteneur parent composé de colonnes et de lignes dans lequel le contenu est distribué verticalement et horizontalement.</p>
+                    <h3>Avantages</h3>
+                    <p>Il permet d'éliminer le recours aux diverses positions et aux autres truchements pour aligner précisément le contenu d'une page Web. De plus, la majorité des propriétés de la grille se font à même le conteneur parent. Voici toutes les propriétés qui y sont liées :</p>
+                    <ul>
+                        <li>display;</li>
+                        <li>grid-template-columns;</li>
+                        <li>grid-template-rows;</li>
+                        <li>grid-template-areas;</li>
+                        <li>grid-template;</li>
+                        <li>grid-auto-columns;</li>
+                        <li>grid-auto-rows;</li>
+                        <li>grid-auto-flow;</li>
+                        <li>grid;</li>
+                        <li>grid-row-start;</li>
+                        <li>grid-column-start;</li>
+                        <li>grid-row-end;</li>
+                        <li>grid-column-end;</li>
+                        <li>grid-row;</li>
+                        <li>grid-column;</li>
+                        <li>grid-area;</li>
+                        <li>row-gap;</li>
+                        <li>column-gap;</li>
+                        <li>masonry-auto-flow;</li>
+                        <li>align-tracks;</li>
+                        <li>justify-tracks.</li>
+                    </ul>
+                    <h3>Exemples</h3>
+                    <p>Voici un exemple simple de son utilisation :</p>
+                    <h5>Code</h5>
+                    <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid var(--terracotta-color);
+    background-color: var(--yellow-color-p);
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.grid-item {
+    display: grid;
+    background-color: var(--yellow-color);
+    border: 2px solid var(--terracotta-color);
+}
+
+.grid-item > p {
+    font-weight: 700;
+    padding: 0;
+}</code></pre>
+                    <h5>Résultat</h5>
+                    <div class="grid-container1">
+                        <div class="grid-item"><p>1</p></div>
+                        <div class="grid-item"><p>2</p></div>
+                        <div class="grid-item"><p>3</p></div>
+                        <div class="grid-item"><p>4</p></div>
+                        <div class="grid-item"><p>5</p></div>
+                        <div class="grid-item"><p>6</p></div>
+                        <div class="grid-item"><p>7</p></div>
+                        <div class="grid-item"><p>8</p></div>
+                    </div>
+                    <p>Voici un exemple plus élaboré de son utilisation :</p>
+                    <h5>Code</h5>
+                    <pre><code>
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid var(--terracotta-color);
+    background-color: var(--yellow-color-p);
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.item1 {
+    grid-column: 1/5;
+}
+
+.item2 {
+    grid-row: 2 / 4;
+    padding: 1rem 0;
+}
+
+.item5 {
+    grid-area: 2 / 4 / 5 / 4;
+    padding: 2rem 0;
+
+}.item8 {
+    grid-column: 1 / 3;
+    padding: 0 1rem;
+}                   </code></pre>
+                    <h5>Résultat</h5>
+                    <div class="grid-container2">
+                        <div class="grid-item item1"><p>1</p></div>
+                        <div class="grid-item item2"><p>2</p></div>
+                        <div class="grid-item item3"><p>3</p></div>
+                        <div class="grid-item item4"><p>4</p></div>
+                        <div class="grid-item item5"><p>5</p></div>
+                        <div class="grid-item item6"><p>6</p></div>
+                        <div class="grid-item item7"><p>7</p></div>
+                        <div class="grid-item item8"><p>8</p></div>
+                        <div class="grid-item item9"><p>9</p></div>
+                    </div>
+                </div>
+            </details>
+            <details id="H" class="sujet">
+                <summary class="details_summary">H</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2> 
+                </div>
+            </details>
+            <details id="I" class="sujet">
+                <summary class="details_summary">I</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2> 
+                </div> 
+            </details>
+            <details id="J" class="sujet">
+                <summary class="details_summary">J</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2> 
+                </div>
+            </details>
+            <details id="K" class="sujet">
+                <summary class="details_summary">K</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2> 
+                </div> 
+            </details>
+            <details id="L" class="sujet">
+                <summary class="details_summary">L</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2> 
+                </div>
+            </details>
+            <details id="M" class="sujet">
+                <summary class="details_summary">M</summary>
+                <div class="details_dropdown">
+                    <h2>MODE DE FUSION DE L'ARRIÈRE-PLAN (BACKGROUND BLEND MODE)</h2> 
+                    <h3>Rôle</h3>
+                    <p>Il s'agit de divers modes de fusion qui s'appliquent sur une image d'arrière-plan.</p>
+                    <h3>Avantages</h3>
+                    <p>Cet outil permet de sauver du temps en évitant de passer par des logiciels de correction photo, comme Adobe Photoshop, et d'appliquer directement un mode de fusion pour obtenir le changement souhaité. Il suffit de choisir parmi les modes suivantes :</p>
+                    <h5>Résultat</h5>
+                    <ul>
+                        <li>normal;</li>
+                        <li>multiply;</li>
+                        <li>screen;</li>
+                        <li>overlay;</li>
+                        <li>darken;</li>
+                        <li>lighten;</li>
+                        <li>color-dodge;</li>
+                        <li>saturation;</li>
+                        <li>color;</li>
+                        <li>luminosity.</li>
+                    </ul>
+                    <h3>Exemple</h3>
+                    <h5>Sans fusion</h5>
+                    <div class="sansfusion-exemple">
+                    </div>
+                    <h5>Avec fusion</h5>
+                    <h5>Code</h5>
+                    <pre><code>.fusion-exemple {
+    width: 50vh;
+    height: 12rem;
+    border-radius: 1rem;
+    background-color: var(--orange-color);
+    background-image: url(../../IMG/montagne.jpg);
+    background-size: cover;
+    background-blend-mode: hard-light;
+}</code></pre>
+                    <div class="fusion-exemple">
+                    </div>
+                </div>
+            </details>
+            <details id="N" class="sujet">
+                <summary class="details_summary">N</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2> 
+                </div>
+            </details>
+            <details id="O" class="sujet">
+                <summary class="details_summary">O</summary>
+                <div class="details_dropdown">
+                    <h2>OPACITÉ (OPACITY)</h2> 
+                    <h3>Rôle</h3>
+                    <p>La propriété d'opacité précise le degré de transparence d'un élément HTML à l'aide d'un nombre entre 0.0 et 0.1 ou un pourcentage.</p>
+                    <h3>Avantages</h3>
+                    <p>Il permet d'élargir la gamme d'effets de couleur dans une page Web.</p>
+                    <h3>Exemple</h3>
+                    <p>Texte</p>
+                    <h5>Résultat</h5>
+                    <img class="opacity" src="./assets/IMG/voyage.jpg" alt="Photo de voyage">
+                </div>
+            </details>
+            <details id="P" class="sujet">
+                <summary class="details_summary">P</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2>
+                </div>
+            </details>
+            <details id="#Q" class="sujet">
+                <summary class="details_summary">Q</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2>
+                </div> 
+            </details>
+            <details id="R" class="sujet">
+                <summary class="details_summary">R</summary>
+                    <h2>REDIMENSIONNER (RESIZE)</h2> 
+                    <h3>Rôle</h3>
+                    <p>La propriété <span class="gras">resize</span> offre la possibilité à l'utilisateur de redimensionner un élément à partir de la poignée située en bas, à droite de l'élément.</p>
+                    <h3>Avantages</h3>
+                    <p>Dynamise l'interaction en permettant à l'usager d'adapter le contenu selon ses besoins et à l'aide des mots-clés suivants :</p>
+                    <ul>
+                        <li>none;</li>
+                        <li>both;</li>
+                        <li>horizontal;</li>
+                        <li>vertical;</li>
+                        <li>block;</li>
+                        <li>inline.</li>
+                    </ul>
+                    <h3>Exemple</h3>
+                    <p>Texte</p>
+                    <h5>Résultat</h5>
+                    <div class="resize-container">
+                        <p>Cliquez sur la poignée en bas, à droite, pour redimensionner l'élément.</p>
+                    </div>
+            </details>
+            <details id="S" class="sujet">
+                <summary class="details_summary">S</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2>
+                </div>
+            </details>
+            <details id="T" class="sujet">
+                <summary class="details_summary">T</summary>
+                <div class="details_dropdown">
+                    <h2>TRANSFORMATION (TRANSFORM)</h2> 
+                    <h3>Rôle</h3>
+                    <p>La propriété de transformation <span class="gras">transform</span> permet de modifier visuellement des formes en 2D ou en 3D sur les axes des X (abscisses) et des Y (ordonnées).</p>
+                    <h3>Avantages</h3>
+                    <p>Grâce à celle-ci, il est possible d'effectuer une translation, une distorsion, une rotation et de jouer avec l'échelle d'une forme ou de créer un ensemble de l'une de ses fonctions à même la propriété <span class="gras">transform</span>.</p>
+                    <p>Ses fonctions sont les suivantes :</p>
+                    <ul>
+                        <li>matrix (seul et 3D)</li>
+                        <li>translate (seul, X, Y, Z et 3D)</li>
+                        <li>scale (seul, X, Y, Z et 3D)</li>
+                        <li>skew (seul, X, Y, Z et 3D)</li>
+                        <li>perspective</li>
+                        <li>ensemble de fonctions</li>
+                    </ul>
+                    <h3>Exemple</h3>
+                    <h5>Départ</h5>
+                    <p>Ici, nous avons un verre avec trois glaces :</p>
+                    <pre><code>.transform-verre {
+        position: relative;
+        width: 7rem;
+        height: 10rem;
+        background-color: var(--brown-color);
+        opacity: 0.8;
+        border-radius: 0.2rem 0.2rem 1rem 1rem;
+        margin: 1rem;
+    }
+    
+    .glace1 {
+        position: absolute;
+        background-color: var(--yellow-color);
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 0.2rem;
+        left: 0.3rem;
+        top: 0.5rem;
+    }
+    
+    .glace2 {
+        position: absolute;
+        background-color: var(--yellow-color);
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 0.2rem;
+        right: 1.5rem;
+        top: 3rem;
+    }
+    
+    .glace3 {
+        position: absolute;
+        background-color: var(--yellow-color);
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 0.2rem;
+        right: 1rem;
+        top: 7rem;
+    }</code></pre>
+                    <div class="transform-exemples">                    
+                        <div class="transform-verre">
+                            <div class="glace1">
+                            </div>
+                            <div class="glace2">
+                            </div>
+                            <div class="glace3">
+                            </div>
+                        </div>
+                        <h5>Rotation</h5>
+                        <p>Le verre tombe par terre. Une rotation avec <span class="gras">transform</span> est effectuée sur le verre. Par conséquent, les glaçons sortent du verre.</p>
+                        <h5>Code</h5>
+                        <pre><code>.transform-verre-2 {
+    position: relative;
+    width: 7rem;
+    height: 10rem;
+    background-color: var(--brown-color);
+    opacity: 0.8;
+    border-radius: 0.2rem 0.2rem 1rem 1rem;
+    margin: 1rem;
+    transform: rotate(90deg);
+}</code></pre>
+                    <h5>Résultat</h5>
+                    <div class="transform-verre-2">
+                        <div class="glace1-2">
+                        </div>
+                        <div class="glace2-2">
+                        </div>
+                        <div class="glace3-2">
+                        </div>
+                    </div>
+                    <h5>Échelle (scale)</h5>
+                    <p>Les glaçons tombés du verre. La propriété <span class="gras">scale</span> est effectuée sur les glaçons pour les diminuer puisqu'ils fondent.</p>
+                    <h5>Code</h5>
+                    <pre><code>.glace1-3 {
+    position: absolute;
+    background-color: var(--yellow-color);
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 0.2rem;
+    right: 0;
+    top: -3rem;
+    transform: scale(-0.5, -0.5);
+}
+
+.glace2-3 {
+    position: absolute;
+    background-color: var(--yellow-color);
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 0.2rem;
+    right: 0;
+    top: -6rem;
+    transform: scale(-0.8, -0.8);
+}
+
+.glace3-3 {
+    position: absolute;
+    background-color: var(--yellow-color);
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 0.2rem;
+    right: 0;
+    top: -8.5rem;
+    transform: scale(-0.4, -0.4);
+}</code></pre>
+                    <h5>Résultat</h5>
+                    <div class="transform-verre-3">
+                        <div class="glace1-3">
+                        </div>
+                        <div class="glace2-3">
+                        </div>
+                        <div class="glace3-3">
+                        </div>
+                    </div>
+                    <h5>Distorsion (skew)</h5>
+                    <p>La propriété <span class="gras">skew</span> est effectuée un rectangle .</p>
+                    <h5>Code</h5>
+<pre><code>.glace1-4 {
+        position: absolute;
+        background-color: var(--yellow-color);
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 0.2rem;
+        right: 0;
+        top: -3rem;
+        transform: scale(-0.5, -0.5) skew(5deg, 5deg);
+    }
+    
+    .glace2-4 {
+        position: absolute;
+        background-color: var(--yellow-color);
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 0.2rem;
+        right: 0;
+        top: -6rem;
+        transform: scale(-0.8, -0.8) skew(10deg, 10deg);
+    }
+    
+    .glace3-4 {
+        position: absolute;
+        background-color: var(--yellow-color);
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 0.2rem;
+        right: 0;
+        top: -8.5rem;
+        transform: scale(-0.4, -0.4) skew(5deg, 5deg);
+    }</code></pre>
+                    <h5>Résultat</h5>
+                    <div class="transform-verre-4">
+                        <div class="glace1-4">
+                        </div>
+                        <div class="glace2-4">
+                        </div>
+                        <div class="glace3-4">
+                        </div>
+                    </div>
+                    <h5>Translation (translate)</h5>
+                    <Code><pre><code>.translate-container {
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--yellow-color-p);
+    border: 2px solid var(--orange-color);
+    border-radius: 1rem;
+    margin: 0 0rem 3rem 1rem;
+}
+
+.translate-item {
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--yellow-color);
+    border-radius: 1rem;
+    transform: translate(2rem, 2rem);
+}</code></pre></Code>
+                <h5>Résultat</h5>
+
+                <div class="translate-container">
+                    <p>Origine</p>
+                    <div class="translate-item">
+                        <p>Déplacement de 2rem sur les axes X et Y</p>
+                </div>
+                </div>
+                <div class="translate-container2">
+                    <div class="translate-item2"></div>
+                </div>
+                </div>
+                <h5>Transformation de l'origine (transform-origin)</h5>
+                <p>La propriété <span class="gras">transform-origin</span> est effectuée sur les axes X et Y d'un rectangle. </p>
+                <h5>Code</h5>
+                <pre><code>.origin-item1 {
+    display: flex;
+    position: relative;
+    text-align: right;
+    padding: 0.5rem;
+    width: 12rem;
+    height: 10rem;
+    background-color: var(--yellow-color-p);
+    border: 2px solid var(--orange-color);
+    border-radius: 1rem;
+    margin: 0 0rem 5rem 1rem;
+}
+
+.origin-item2 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    padding: 1rem;
+    width: 12rem;
+    height: 10rem;
+    background-color: var(--yellow-color);
+    transform: rotate(55deg);
+    transform-origin: 15% 25%;
+    border-radius: 1rem;
+}</code></pre>
+                <h5>Résultat</h5>
+                <div class="origin-base">
+                    <div class="origin-item1">
+                        <div class="origin-item2">
+                            <p>Rotation de<br>55 degrés et déplacement de l'origine de<br>55 % et 25 %</p>
+                        </div>
+                    </div>
+                </div>
+                    <h5>Visibilité de la face arrière (backface-visibility)</h5>
+                    <p>La propriété <span class="gras">backface-visibility</span> est effectuée sur un cercle et permet de voir la vue arrière de la forme grâce à une animation.</p>
+                    <h5>Code</h5>
+                    <pre><code></code></pre>
+                    <h5>Résultat</h5>
+                    <div class="backface-item1">
+                        <p>CSS3</p>
+                    </div>
+                </div>
+            </details>
+            <details id="U" class="sujet">
+                <summary class="details_summary">U</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2>
+                </div>
+            </details>
+            <details id="V" class="sujet">
+                <summary class="details_summary">V</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2>
+                </div>
+            </details>
+            <details id="W" class="sujet">
+                <summary class="details_summary">W</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2>
+                </div> 
+            </details>
+            <details id="X" class="sujet">
+                <summary class="details_summary">X</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2>
+                </div> 
+            </details>
+            <details id="Y" class="sujet">
+                <summary class="details_summary">Y</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2>
+                </div>
+            </details>
+            <details id="Z" class="sujet">
+                <summary class="details_summary">Z</summary>
+                <div class="details_dropdown">
+                    <h2>À VENIR!</h2>
+                </div> 
+            </details>
+            <details id="reference" class="sujet">
+                <summary class="details_summary">Réf.</summary>
+                <div class="details_dropdown">
+                    <h3>Références</h3>
+                    <p><a href="https://unsplash.com/fr/photos/une-photo-en-noir-et-blanc-dun-mur-wXN8DQHrpvI" target="_blank">Mur gris de béton</a></p>
+                    <p><a href="https://unsplash.com/fr/photos/maison-brune-et-blanche-pres-des-plantes-vertes-pendant-la-journee-gu6Peq5INUk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Maison bretonne</a></p>
+                    <p><a href="https://booknode.com/geisha_02211/extraits" target="_blank">Geisha, Arthur Golden</a></p>
+                    <p><a href="https://unsplash.com/fr/photos/un-groupe-de-personnes-debout-devant-une-fontaine-16t2tlRnVXQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photo de voyage</a></p>
+                    <p><a href="https://unsplash.com/fr/photos/selective-focus-photography-of-brown-hamster-adK3Vu70DEQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Hamster roux-blanc</a></p>
+                </div> 
+            </details>
+    </main>
+<div class="top">
+    <button id="backToTop" class="hide">Top
+    </button>
+</div>
+<footer>
+    <div class="footer">
+        <h2>EVE CLOUTIER</h2>
+        <p>PMI</p>
+        <p><time datetime="2024-05-22">22 mai 2024</time></p>
+    </div>
+</footer>
+</body>
+</html>

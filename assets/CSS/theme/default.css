@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --black-color: #0D0D0D;
+    --brown-color: #591202;
+    --terracotta-color: #8C1C03;
+    --orange-color: #D93D04;
+    --yellow-color: #F27405;
+    --yellow-color-p:#f2740580;
+    --white-color: #FFFFFF;
+}
+
+body {
+    margin : 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, p, pre {
+    margin : 0 auto;
+}
+
+h1 {
+    font-family: 'Abrilfatface regular';
+    font-size: 4rem;
+    color: var(--orange-color);
+}
+
+h2 {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    color: var(--brown-color);
+    padding: 1rem 0 0.5rem 1rem;
+}
+
+h3 {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--brown-color);
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+h4 {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--yellow-color);
+}
+
+h5 {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    color: var(--black-color);
+    font-size: 1rem;
+    padding: 1rem 0 0.5rem 1rem;
+}
+
+summary  {
+    font-family: 'Abrilfatface regular';
+    font-weight: 800;
+    font-size: 2rem;
+    padding-left: 50px;
+    color: var(--yellow-color);
+
+}
+
+summary a,
+details a {
+    text-decoration: none;
+}
+
+p {
+    padding: 0 0 0.5rem 1rem;
+}
+
+p, li {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--black-color);
+}
+
+li {
+    padding: 0;
+    margin: 0
+}
+
+pre {
+    white-space:pre-wrap;
+    overflow-x:auto;
+    padding-left: 1rem;
+}
+
+a {
+    color: var(--black-color);
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+a:visited {
+    color: var(--brown-color);
+}
+
+a:visited {
+    color: var(--black-color);
+}
+
+.gras {
+    font-weight: 800;
+}
+
+
+
+
+

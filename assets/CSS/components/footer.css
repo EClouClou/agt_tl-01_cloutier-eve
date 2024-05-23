@@ -1,0 +1,47 @@
+.footer {
+    display: flex;
+    justify-content: row;
+    justify-content: center;
+    background-color: var(--terracotta-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer h2,
+.footer p {
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+}
+
+.footer h2,
+.footer p {
+    color: var(--yellow-color);
+}
+
+/*tablette*/
+@media screen and (min-width: 768px){
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--terracotta-color);
+    }
+
+    .footer h2,
+    .footer p {
+        font-size: 1rem;
+    }
+
+}
+
+/*desktop*/
+@media screen and (min-width: 1024px){
+
+}   
+
+/*desktop XL*/
+@media screen and (min-width: 1280px){
+    
+}

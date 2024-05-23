@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Abrilfatface regular';
+    src: url(../../FONTS/abrilfatface-regular-webfont.woff2) format("woff2"),
+    url(../../FONTS/abrilfatface-regular-webfont.woff)format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
